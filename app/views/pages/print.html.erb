@@ -1,0 +1,89 @@
+<% provide(:title, "Stampa 3D") %>
+<div class="hero container-fluid white-text center-text B s2 bg-8" id="hero-print">
+	<div class="hero-titlebox"></div>
+	<div class="title-container"><h1 class="up">stampa 3D</h1></div>
+</div>
+<section class="widescreen-post-hero container-fluid">
+	<div class="container col-flex rounded justified s2" id="print-intro">
+		<p class="">La <strong>stampa 3D</strong> è una tecnica che permette di ottenere riproduzioni fisiche a partire da <strong>modelli tridimensionali</strong>. Tramite l'utilizzo di apposite <strong>stampanti 3D</strong> si è ora in grado di realizzare qualsiasi modello tridimensionale: partendo da un oggetto disegnato tramite software di modellazione 3D o da un modello fotogrammetrico derivato da un rilievo, si riesce a realizzarlo, creandone una copia tangibile. La procedura prevede l'utilizzo di appositi materiali (solitamente plastici o affini) tramite il posizionamento di uno strato sopra l’altro, procedendo per sezioni trasversali, attraverso la modellazione a deposizione fusa (oppure FDM, dall’inglese “fused deposition modeling”), con cui si impiega un ugello riscaldato che alza la temperatura del materiale prima di depositarlo. </p>
+	</div>
+</section>
+<section class="fade-on-scroll widescreen col-flex" id="applicazioni-stampa">
+	<div class="container-md">
+		<div class="row">
+			
+		</div>
+		<div class="container col-flex cta">
+			<span class="btn white-text o-bg" id="cta2" onclick="openForm()">CHIEDI UN PREVENTIVO</span>
+		</div>
+	</div>
+</section>
+<section id="vantaggi-stampa" class="fade-in ">
+	<div class="container col-flex">
+		<h2 class="center-text up B s3">Vantaggi della Stampa 3d</h2>
+		<div class="row justified s2 white-text">
+			<div class="col-md-4">
+				<div class="center-text"><i class="material-icons">monetization_on</i></div>
+				<div>
+					<h4 class="center-text">Costi contenuti</h4>
+					<p>Rispetto ai mezzi tradizionlmente utilizzati (come elicotteri o aerei) i costi sono notevolmente contenuti</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="center-text"><i class="material-icons">high_quality</i></div>
+				<div>
+					<h4 class="center-text">Qualità</h4>
+					<p>Grazie all'utilizzo di camere ad alta risoluzione stabilizzate meccanicamente, è possibile ottenere prodotti con alta risoluzione a terra.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="center-text"><i class="material-icons">flash_on</i></div>
+				<div>
+					<h4 class="center-text">Tempi rapidi</h4>
+					<p>Grazie all'aerofotogrammetria è possibile rilevare estese aree di terreno in tempi ridottissimi, rispetto ai tradizionali metodi di rilievo.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="widescreen">
+	<section class="container-fluid printer scrolled-by-btn" id="printer">
+		<div class="container-md card-border s1 white-text">
+			<h2 class="center-text">Le nostre stampanti 3d</h2>
+			<div class="row">
+				<div class="col-sm-6" id="Artillery">
+					<h3 class="center-text">Artillery Sidewinder X1</h3>
+					<div class="col-flex">	
+						<div class="col-sm-4 col-flex">
+							<div class="img-round">
+								<%= image_tag("artillery2.png", alt: "Stonex S8") %>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" id="Anet">
+					<h3 class="center-text">Prusa i3 Anet A8</h3>
+					<div class="col-flex">
+						<div class="col-sm-4 col-flex">
+							<div class="img-round">
+								<%= image_tag("anet.png", alt: "Ruide") %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cta">
+		<div class="container col-flex">
+			<span class="btn white-text o-bg" id="cta2" onclick="openForm()">CHIEDI UN PREVENTIVO</span>
+		</div>
+	</section>
+</div>
+<section class="form container-fluid" id="form">
+	<div class="container col-flex w-bg card-border">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOn4PIbPw4islpwi0nZ-fMJnBS2Vx-3xIlSlOzPniI-GPP9Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
+	</div>
+	<i onclick="closeForm()"class="material-icons" style="cursor: pointer;">clear</i>
+</section>

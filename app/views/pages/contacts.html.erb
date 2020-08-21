@@ -1,0 +1,43 @@
+<% provide(:title, "Contatti") %>
+<section class="contacts bg-7" id="contacts">
+	<div class="container col-flex">
+		<div class="card-border w-bg s2 center-text">
+			<h2>VERTICAL EYE | Drone Solutions</h2>
+			<p>Via Mazzini, 156<br>41049 Sassuolo (MO)</p>
+			<br>
+			<div class="phone">
+				<h3 class="up">telefono</h3>
+				<ul class="ul-lefted">
+					<li><i class="material-icons">smartphone</i><a href="tel:+39 3400549443">+39 3400549443 - Andrea</a></li>
+					<br>
+					<li><i class="material-icons">smartphone</i><a href="tel:+39 3466388256">+39 3466388256 - Filippo</a></li>
+				</ul>
+			</div>
+			<br>
+			<div class="mail">
+				<h3 class="up">mail</h3>
+				<ul class="ul-lefted">
+					<li><i class="material-icons">mail</i><a href="mailto:verticaleye18@gmail.com">verticaleye18@gmail.com</a></li>
+				</ul>
+			</div>
+			<br>
+			<div>
+				<h3 class="up">social</h3>
+				<div class="row social" id="">
+					<div class="col-4 center-text">
+					</div>
+					<div class="col-4 center-text row">
+						<div class="social-container facebook" id="">
+							<%= link_to image_tag("facebook.png", alt: "facebook"), 'https://www.facebook.com/verticaleye18/' %>
+			      </div>
+			      <div class="social-container instagram" id="">
+							<%= link_to image_tag("insta.png", alt: "instagram"), 'https://www.instagram.com/vertical_eye/?hl=it' %>
+			      </div>
+					</div>
+					<div class="col-4 center-text">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>VerticalEye | <%= yield(:title) %></title>
+    <meta name="description" content="<%= yield(:meta_desc) %>">
+    <meta charset="utf-8">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'grid-sistem', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  	<%= render "layouts/header" %>
+    <div class="container-fluid col-flex" id="initial">
+      <div class="logo">
+        <%= video_tag("terza.mp4", autoplay: true, title:"scatto") %>
+      </div>
+    </div>
+    <main id="main">
+      <%= yield %>
+    </main>
+    <%= render "layouts/footer" %>
+    <script type="text/javascript">document.getElementById("defaultOpen").click();</script>
+  </body>
+</html>

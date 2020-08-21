@@ -1,0 +1,121 @@
+<% provide(:title, "Soluzioni con drone") %>
+<% provide(:meta_desc, "Soluzioni con droni, su misura, per rilievi topografici, ispezioni e riprese in tempi ridotti, applicabili in svariati campi: Edilizia, Progettazione, Certificazione, Efficientamento, Restauro Archeologia, Promozione e pubblicità, Agricoltura, Allevamento") %>
+<div class="hero container-fluid white-text center-text B" id="hero-home">
+	<div class="hero-titlebox"></div>
+	<div class="title-container"><h1>VERTICAL EYE <br> Drone Solutions</h1></div>
+</div>
+<br>
+<section class="container-fluid col-flex white-text" id="value-proposition">
+	<div class="widescreen-post-hero">
+		<h2 class="s4 fade-in-instant center-text">Un altro punto di vista è possibile</h2>
+	</div>
+	<div class="container-md center-text fade-in-late">
+		<div class="rounded s3">
+			<p class="justified">L'uomo ha sempre bramato di volare, di poter osservare e immortalare il mondo da un'altra prospettiva:<br> dagli esperimenti di Leonardo ai primi palloni aerostatici fino ai più modermi aerei.<br>Oggi, grazie ai droni, è possibile farlo in modo sempre più accessibile ed economico!</p>
+		</div>
+	</div>
+</section>
+<section class="col-flex justified container-fluid widescreen white-text fade-in-instant" id="brand-identity">
+	<div class="col-flex container-fluid" id="campi">
+		<div class="container-md">
+			<p class="s2">La <strong>MISSION di VERTICAL EYE</strong> è quella di mettere al servizio di aziende e privati <strong>personale qulificato e sempre aggiornato in materia di tecnologie e normative</strong>, avvalendosi anche di collaborazioni esterne, al fine di garantire sempre operazioni di qualità, sviluppate e realizzate attorno alle esigenze del cliente.
+			<br><br>
+			Pertanto offriamo un gamma di servizi (con Drone e non solo), che permettono di osservare, registrare e misurare la realtà da un nuovo punto di vista, raggiungendo spazi inediti e aree altrimenti inaccessibili, in tempi contenuti, fornendo servizi preziosi nei campi di:</p>
+		</div>
+		<div class="">
+			<%= image_tag("Icone.png", alt:"campi d'applicazione", title:"Campi d'applicazione")%>
+		</div>
+	</div>
+</section>
+<section class="col-flex widescreen white-text" id="elements">				
+	<div class="col-flex container s2">
+		<div class="elements-container" id="icondwn">	
+			<div class="el-item lower">
+				<i class="material-icons">camera</i>
+				<br>
+				<div class="caption">
+					<%= link_to "RIPRESE AEREE", drone_path %>
+				</div>				
+			</div>
+			<div class="el-item upper">
+				<i class="material-icons">map</i>
+				<br>
+				<div class="caption">
+					<%= link_to "RILIEVI", survey_path %>
+				</div>
+			</div>
+			<div class="el-item lower">
+				<i class="material-icons">search</i>
+				<br>
+				<div class="caption">
+					<%= link_to "ISPEZIONI", drone_path %>
+				</div>
+			</div>
+		</div>
+		<div class="elements-container">
+			<div class="el-item" id="el-logo">
+				<%= image_tag("Logo piccolo bianco.png", alt: "logo_piccolo", title:"logo piccolo") %>
+			</div>
+		</div>
+		<div class="elements-container" id="iconup">	
+			<div class="el-item upper">
+				<i class="material-icons">settings</i>
+				<br>
+				<div class="caption">
+					<%= link_to "INNOVAZIONE", print_path %>
+				</div>
+			</div>
+			<div class="el-item lower">
+				<i class="material-icons">group</i>
+				<br>
+				<div class="caption"><%= link_to "Personale qualificato", about_path %></div>		
+			</div>
+			<div class="el-item upper">
+				<i class="material-icons">flash_on</i>
+				<br>
+				<div class="caption">
+					<p>Tempi rapidi</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-4 col-flex half-screen-sm s3" id="cta-1">
+	<div class="container">
+		<h2 class="up center-text white-text">scopri i nostri servizi</h2>
+		<br>
+		<div class="row fade-in">
+			<div class="col-md-3 col-flex">
+				<%= link_to "RILIEVI", survey_path, class:"btn white-text o-bg" %>
+			</div>
+			<div class="col-md-3 col-flex">
+				<%= link_to "DRONI", drone_path, class:"btn white-text o-bg" %>
+			</div>
+			<div class="col-md-3 col-flex">
+				<%= link_to "ARCHEOLOGIA", archeologia_path, class:"btn white-text o-bg" %>
+			</div>
+			<div class="col-md-3 col-flex">
+				<%= link_to "STAMPA 3D", print_path, class:"btn white-text o-bg" %>
+			</div>
+		</div>
+	</div>
+</section>
+<section class=" half-screen-sm col-flex white-text" id="partners">
+	<div class="container-md">
+		<h2 class="up center-text s3">le nostre collaborazioni</h2>
+		<div class="row">
+			<div class="col-md-6 center-text">
+				<div class="logo-coll">
+					<a href="https://www.binarioprint.it" target="_blank"><%= image_tag("binarioprint.PNG", alt:"binarioprint stampa 3D", title:"Binarioprint", class:"images-xs") %></a> 
+				</div>
+			</div>
+			<div class="col-md-6 center-text">
+				<div class="logo-coll">
+					<a href="https://www.godian.it" target="_blank"><%= image_tag("Godian.JPG", alt:"godian videomaker", title:"Godian", class:"images-xs") %></a> 
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
