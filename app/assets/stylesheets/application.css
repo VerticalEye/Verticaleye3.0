@@ -1175,7 +1175,7 @@ footer{
 
   .hero-img img{
    max-height: 250px;
-}
+  }
 
   .widescreen-post-hero{
     min-height: calc((100vh - 90px) / 2);
@@ -1202,7 +1202,7 @@ footer{
     flex-wrap: wrap;
   }
 
-   #drone-container{
+  #drone-container{
     animation:drone-entry-sm 2s linear 0s normal 1,
               animate-drone-sm 3s linear 2s alternate infinite;
   }
@@ -1231,6 +1231,10 @@ footer{
 
   #lavori .images-lg{
     width: 100%;
+  }
+
+  .flip-card-back{
+    font-size: 1.5rem;
   }
 
   /* Place the timelime to the left */
