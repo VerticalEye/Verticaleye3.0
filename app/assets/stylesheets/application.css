@@ -769,6 +769,7 @@ transform: translateY(25px);
   background-color: transparent;
   color: white;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .tablink:hover {
@@ -781,13 +782,8 @@ transform: translateY(25px);
 }
 
 
-.tabcontent .col-md-4{
-  padding: 0 10px;
-}
-
 .tabcontent .col-md-4:hover .center-text{
   color: orange;
-  animation: animateicon .5s ease-out 0s alternate 1;;
   transform: scale(1.5);
 }
 
@@ -804,10 +800,6 @@ transform: translateY(25px);
 }
 
 
-.sticky{
-  position: sticky;
-  top: 60px;
-}
 
 .services h3{
   font-size: 2.5rem;
@@ -1120,9 +1112,6 @@ footer{
 
 @media only screen and (min-width: 768px){
 
-
-
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -1229,6 +1218,10 @@ footer{
     padding: 0;
   }
 
+  #el-logo img{
+    width: 150%;
+  }
+
   #lavori .images-lg{
     width: 100%;
   }
@@ -1299,6 +1292,12 @@ footer{
     display: none;
   }
 
+  .sticky{
+    position: fixed;
+    top: 90px;
+  }
+
+
 
 }
 
@@ -1354,8 +1353,8 @@ footer{
   0%{transform: scale(1);}
   25%{transform: scale(2);}
   50%{transform: scale(0.5);}
-  75%{transform: scale(1);}
-  100%{transform: scale(1.5)}
+  75%{transform: scale(1.5);}
+  100%{transform: scale(1)}
 }
 
 @keyframes ts-entry{
