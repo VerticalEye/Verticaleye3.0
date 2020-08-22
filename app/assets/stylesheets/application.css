@@ -1376,8 +1376,8 @@ footer{
 }
 
 @keyframes disappear{
-  0%{top: -100%;}
-  100%{top: -101%;}
+  0%{top: -300%; opacity: 0;}
+  100%{top: -300%; opacity: 0;}
 }
 
 @keyframes animate-cta{
