@@ -310,7 +310,7 @@ p{
 }
 
 .widescreen-post-hero{
- height: calc(100vh - 450px - 90px);
+ min-height: calc(100vh - 450px - 90px);
  display: flex;
  flex-direction: column;
  justify-content: center;

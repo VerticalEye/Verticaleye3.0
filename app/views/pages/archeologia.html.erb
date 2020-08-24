@@ -13,7 +13,7 @@
 	</div>
 </section>
 <section class="container-fluid services max-widescreen hide" id="archeologia">
-	<div class="container-fluid row">
+	<div class="container-fluid row sub-menu">
 		<div class="col-md-4 tablink center-text" onclick="openPage('preventiva', this, 'orange')" id="defaultOpen"><span>Preventiva</span></div>
 		<div class="col-md-4 tablink center-text" onclick="openPage('assistenza', this, 'orange')"><span>Assistenza</span></div>
 		<div class="col-md-4 tablink center-text" onclick="openPage('scavo', this, 'orange')"><span>Scavo</span></div>
@@ -123,3 +123,22 @@
 	</div>
 	<i onclick="closeForm()"class="material-icons" style="cursor: pointer;">clear</i>
 </section>
+<script type="text/javascript">
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {stickyFunction()};
+
+	// Get the navbar
+	var subMenu = document.getElementsByClassName("sub-menu")[0];
+
+	// Get the offset position of the navbar
+	var sticky = subMenu.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function stickyFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    subMenu.classList.add("sticky");
+	  } else {
+	    subMenu.classList.remove("sticky");
+	  }
+	}
+</script>
