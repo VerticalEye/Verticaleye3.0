@@ -437,15 +437,17 @@ p{
 #initial{
   position: fixed;
   height: 100vh;
-  background: #ffffff;
+  background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
+              url(sfondo3.jpg) no-repeat top  / cover;
   z-index: 100;
   top: 0;
   animation: fade-out 2.5s linear .5s normal 1,
              disappear 1s linear 3s alternate infinite;
 }
 
-#initial .logo video{
-  max-height: 50vh;
+#initial .logo img{
+  max-height: 70vh;
+  width: auto;
 }
 
 .row-top{
