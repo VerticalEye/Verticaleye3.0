@@ -441,8 +441,8 @@ p{
               url(sfondo3.jpg) no-repeat top  / cover;
   z-index: 100;
   top: 0;
-  animation: fade-out 2.5s linear .5s normal 1,
-             disappear 1s linear 3s alternate infinite;
+  animation: fade-out 2s linear .5s normal 1,
+             disappear 1s linear 2.5s alternate infinite;
 }
 
 #initial .logo img{
@@ -1073,23 +1073,28 @@ footer{
 
 @media screen and (min-width: 992px) {
 
-/*********** NAVBAR ***********/
-#mobile-nav{
-  display: none;
+  .widescreen-lg{
+    min-height: calc(100vh - 90px);
+  }
 }
 
-.widescreen-lg{
-  min-height: calc(100vh - 90px);
+@media screen and (min-width: 1025px){
+  #mobile-nav{
+    display: none;
+  }
 }
+
+@media screen and (max-width: 1024px){
+  #pc-nav{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
 
 
 /************ NAVBAR **********/
-#pc-nav{
-  display: none;
-}
+
 .justified {
     text-align: justify;
 }
@@ -1320,11 +1325,11 @@ footer{
 
 
 @keyframes animate-drone{
-  0%{ top: 50px; right: 0%; }
-  25%{ top: 51.5px; right: 0.5%; }
-  50%{ top: 50px; right: 0%; }
-  75%{ top: 51.5px; right: 0.5%; }
-  100%{ top: 50px; right: 0% }
+  0%{ top: 0px; right: 0%; }
+  25%{ top: 1.5px; right: 0.5%; }
+  50%{ top: 0px; right: 0%; }
+  75%{ top: 1.5px; right: 0.5%; }
+  100%{ top: 0px; right: 0% }
 }
 
 @keyframes animate-drone-sm{
@@ -1337,7 +1342,7 @@ footer{
 
 @keyframes drone-entry{
   0%{top:100%; right: -45%;}
-  100%{top: 50px; right: 0%;}
+  100%{top: 0px; right: 0%;}
 }
 
 @keyframes drone-entry-sm{
