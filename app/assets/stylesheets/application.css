@@ -441,8 +441,8 @@ p{
               url(sfondo3.jpg) no-repeat top  / cover;
   z-index: 100;
   top: 0;
-  animation: fade-out 2s linear .5s normal 1,
-             disappear 1s linear 2.5s alternate infinite;
+  animation: fade-out 1.5s linear .5s normal 1,
+             disappear 1s linear 2s alternate infinite;
 }
 
 #initial .logo img{
@@ -625,6 +625,20 @@ transform: translateY(25px);
   background: #000000;
   color: orange;
 }
+
+.hover-img{
+  display: none;
+}
+
+#el-logo:hover .hover-img{
+  display: block;
+}
+
+#el-logo:hover #logo-animato{
+  display: none;
+}
+
+
 
 /**** ABOUT ****/
 
