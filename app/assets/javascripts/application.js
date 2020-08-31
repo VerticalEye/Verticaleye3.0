@@ -57,7 +57,7 @@ function closeForm(){
 }
 
 //Lightbox
-$document.ready(function(){
+$(document).ready(function(){
   $("#lavori img").click(function(){
     var href = $(this).attr("src");
     $overlay.show();
