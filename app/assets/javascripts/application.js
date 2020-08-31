@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
@@ -55,3 +56,21 @@ function closeForm(){
   document.getElementsByClassName("form")[0].style.display = "none";
 }
 
+//Lightbox
+
+$("#lavori img").click(function(){
+  var href = $(this).attr("src");
+  $overlay.show();
+  $immagine.attr("src", href);
+  $immagine.show();
+});
+
+var $overlay = $('<div id="overlay"></div>');
+var $immagine = $('<img>');
+
+$("body").append($overlay);
+$overlay.append($immagine);
+
+$($overlay).click(function(){
+  $overlay.hide();
+})
