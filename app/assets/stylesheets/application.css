@@ -983,13 +983,12 @@ transform: translateY(25px);
   top: 90px;
   z-index: 100;
   display: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding-top: 5%;
 }
 
 #overlay img{
-  max-width: 70%;
+  max-width: 60%;
 }
 
 /**** CONTATTI + FOOTER ****/

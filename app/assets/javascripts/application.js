@@ -10,10 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
 //= require rails-ujs
+//= require jquery
+//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 	/* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -56,22 +58,8 @@ function closeForm(){
   document.getElementsByClassName("form")[0].style.display = "none";
 }
 
+
 //Lightbox
-$(document).ready(function(){
-  $("#lavori img").click(function(){
-    var href = $(this).attr("src");
-    $overlay.show();
-    $immagine.attr("src", href);
-    $immagine.show();
-  });
 
-  var $overlay = $('<div id="overlay"></div>');
-  var $immagine = $('<img>');
 
-  $("body").append($overlay);
-  $overlay.append($immagine);
 
-  $($overlay).click(function(){
-    $overlay.hide();
-  });
-});
