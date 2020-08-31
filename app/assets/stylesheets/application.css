@@ -418,12 +418,19 @@ p{
   z-index: 2;
 }
 
+.cta{
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .cta .btn{
   font-size: 2rem;
   cursor: pointer;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
   transform: scale(0.8);
   animation: animate-cta 1s linear 0s alternate infinite;
   z-index: 2;
@@ -1132,7 +1139,9 @@ footer{
 }
 
 @media only screen and (min-width: 768px){
-
+  .cta{
+    transform: translateX(40%);
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1173,10 +1182,6 @@ footer{
 
   .s4{
     font-size: 4rem;
-  }
-
-  .cta .btn{
-    right: 25%;
   }
 
   .hero{
