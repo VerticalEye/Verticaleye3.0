@@ -57,20 +57,21 @@ function closeForm(){
 }
 
 //Lightbox
+$document.ready(function(){
+  $("#lavori img").click(function(){
+    var href = $(this).attr("src");
+    $overlay.show();
+    $immagine.attr("src", href);
+    $immagine.show();
+  });
 
-$("#lavori img").click(function(){
-  var href = $(this).attr("src");
-  $overlay.show();
-  $immagine.attr("src", href);
-  $immagine.show();
+  var $overlay = $('<div id="overlay"></div>');
+  var $immagine = $('<img>');
+
+  $("body").append($overlay);
+  $overlay.append($immagine);
+
+  $($overlay).click(function(){
+    $overlay.hide();
+  });
 });
-
-var $overlay = $('<div id="overlay"></div>');
-var $immagine = $('<img>');
-
-$("body").append($overlay);
-$overlay.append($immagine);
-
-$($overlay).click(function(){
-  $overlay.hide();
-})
