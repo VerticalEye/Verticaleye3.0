@@ -16,7 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
-	/* Set the width of the side navigation to 250px */
+/* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -31,13 +31,13 @@ function closeNav() {
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = $(".tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
   // Remove the background color of all tablinks/buttons
-  tablinks = document.getElementsByClassName("tablink");
+  tablinks = $(".tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
@@ -57,9 +57,5 @@ function openForm(){
 function closeForm(){
   document.getElementsByClassName("form")[0].style.display = "none";
 }
-
-
-//Lightbox
-
 
 

@@ -147,7 +147,9 @@ h1{
 
 p{
   padding: 0px 10px;
+  transition: .5s;
 }
+
 
 .hero .title-container{
   position: absolute;

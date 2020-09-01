@@ -2,6 +2,7 @@
   "name": "VerticalEye2_0",
   "private": true,
   "dependencies": {
-    "jquery-appear-original": "^0.6.2"
+    "jquery-appear-original": "^0.6.2",
+    "scrollreveal": "^4.0.7"
   }
 }
