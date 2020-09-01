@@ -1176,6 +1176,14 @@ footer{
   .pc-tablet-only{
     display: none;
   }
+
+  #overlay img{
+    max-width: 90%;
+  }
+
+  #overlay{
+    padding-top: 30%;
+  }
 }
 
 @media only screen and (max-width: 575px) {
