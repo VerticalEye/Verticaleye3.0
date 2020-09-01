@@ -413,11 +413,6 @@ p{
   transition: 0.3s;
 }
 
-.img-container img:hover{
-  transform: scale(3);
-  z-index: 2;
-}
-
 .cta{
   position: fixed;
   bottom: 30px;
@@ -985,6 +980,8 @@ transform: translateY(25px);
   display: none;
   text-align: center;
   padding-top: 5%;
+  color: white;
+  font-size: 2rem;
 }
 
 #overlay img{
@@ -1110,6 +1107,11 @@ footer{
 
   .widescreen-lg{
     min-height: calc(100vh - 90px);
+  }
+
+  .img-container img:hover{
+    transform: scale(3);
+    z-index: 2;
   }
 }
 
