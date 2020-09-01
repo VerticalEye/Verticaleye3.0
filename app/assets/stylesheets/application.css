@@ -77,23 +77,23 @@
 }
 
 .s0{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .s1{
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .s2{
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .s3{
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
 
 .s4{
-  font-size: 4rem;
+  font-size: 4.3rem;
 }
 
 /*********** GENERAL ***********/
@@ -121,6 +121,7 @@ html {
 body{
   margin: 0px;
   font-family: 'Teko', sans-serif;
+  overflow-x: hidden;
 }
 
 
@@ -172,6 +173,7 @@ p{
 .ul-lefted{
   padding-left: 0;
 }
+
 
 .hero{
   height: 450px;
@@ -235,6 +237,34 @@ p{
   animation: fade-in .5s linear 4s normal 1,
              opacità 1s linear 4.5s normal infinite;
 }
+
+.animation-element{
+  opacity: 0;
+  position: relative;
+}
+
+.fade-from-right{
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+.fade-from-left{
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+.fade-from-bottom{
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+
+.in-view {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+
 
 .fade-in{
   opacity: 0;
@@ -630,9 +660,6 @@ transform: translateY(25px);
   color: orange;
 }
 
-.hover-img{
-  display: none;
-}
 
 #el-logo:hover .hover-img{
   display: block;
@@ -785,7 +812,7 @@ transform: translateY(25px);
 
 .tabcontent {
   display: none;
-  padding: 20px 20px;
+  padding: 150px 20px;
   background-color: transparent;
   color: white;
   height: 100%;
@@ -798,9 +825,11 @@ transform: translateY(25px);
 
 .services{
   padding-bottom: 20px;
-  margin: 90px 0 0 0;
 }
 
+.sub-menu{
+  padding-top: 90px;
+}
 
 .tabcontent .col-md-4:hover .center-text{
   color: orange;
@@ -1160,6 +1189,9 @@ footer{
   .cta{
     transform: translateX(40%);
   }
+
+  
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1346,7 +1378,8 @@ footer{
 
   .sticky{
     position: fixed;
-    top: 90px;
+    top:0px;
+    z-index: 2;
   }
 
 
