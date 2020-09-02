@@ -47,3 +47,6 @@ $("#lavori img").click(function(){
   $($overlay).click(function(){
     $overlay.hide();
   });
+
+
+
