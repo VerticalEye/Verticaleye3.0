@@ -49,4 +49,9 @@ $("#lavori img").click(function(){
   });
 
 
+  
 
+  var $gif = $('<img alt="logo_gif" title"logo gif">');
+  var $src = $('#gif').attr("src");
+  $gif.attr('src', $src);
+  $('#logo-hover .in-view').append($gif);
