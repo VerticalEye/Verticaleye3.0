@@ -121,7 +121,6 @@ html {
 body{
   margin: 0px;
   font-family: 'Teko', sans-serif;
-  overflow-x: hidden;
 }
 
 
@@ -164,7 +163,7 @@ p{
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  animation: fadein-title 2s linear .5s alternate 1;
+  animation: fadein-title 1s linear 0s alternate 1;
   min-width: 30%;
   max-width: 110%;
   z-index: 1;
@@ -243,40 +242,101 @@ p{
   position: relative;
 }
 
-.fade-from-right{
+/*animation element sliding left*/
+
+.animation-element.fade-from-left {
   opacity: 0;
-  transform: translateX(500px);
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
 }
 
-.fade-from-left{
-  opacity: 0;
-  transform: translateX(-500px);
-}
-
-.fade-from-bottom{
-  opacity: 0;
-  transform: translateY(300px);
-}
-
-
-.in-view {
+.animation-element.fade-from-left.in-view {
   opacity: 1;
-  transform: translate(0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
-
-
-.fade-in{
+.animation-element.fade-from-right {
   opacity: 0;
-  animation: fade-in .5s linear 2.5s normal 1,
-             opacità 1s linear 3s normal infinite;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
 }
 
-.fade-in-instant{
-  opacity: 0;
-  animation: fade-in 0.5s linear 2s normal 1,
-             opacità 1s linear 2.5s normal infinite;
+.animation-element.fade-from-right.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
+
+.animation-element.fade-from-bottom {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200px, 0px);
+}
+
+.animation-element.fade-from-bottom.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animation-element.fade-from-top {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(0px, -200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, -200px);
+  -ms-transform: translate(0px, -200px);
+  transform: translate3d(0px, -200px, 0px);
+}
+
+.animation-element.fade-from-top.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animation-element.in-view{
+  opacity: 1;
+  transition: 1.5s;
+}
+
 
 .hero-img img{
    width: auto;
@@ -1430,8 +1490,8 @@ footer{
 
 
 @keyframes fadein-title{
-  0%{ top: -100%; opacity: 0;}
-  100%{ top: 0; opacity: 1;}
+  0%{ left: -10%; opacity: 0;}
+  100%{ left: 0; opacity: 1;}
 }
 
 @keyframes animateicon{
