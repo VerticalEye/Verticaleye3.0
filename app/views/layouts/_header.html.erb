@@ -11,7 +11,7 @@
 					<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
 					<li class="<%= 'active' if current_page?(drone_path) %>"><%= link_to "Drone", drone_path %></li>
 					<li class="<%= 'active' if current_page?(survey_path) %>"><%= link_to "Rilievi", survey_path %></li>
-					<li class="<%= 'active' if current_page?(archeologia_path) %>"><%= link_to "Archeologia", archeologia_path %></li>
+					<li class="<%= 'active' if current_page?(archeologia_path) %>" style="display: none;"><%= link_to "Archeologia", archeologia_path %></li>
 					<li class="<%= 'active' if current_page?(print_path) %>"><%= link_to "Stampa 3D", print_path %></li>
 					<li class="<%= 'active' if current_page?(portfolio_path) %>"><%= link_to "Portfolio", portfolio_path %></li>
 					<li class="<%= 'active' if current_page?(contacts_path) %>"><%= link_to "Contatti", contacts_path %></li>
@@ -24,7 +24,7 @@
          	<%= link_to "About", about_path %>
 					<%= link_to "Drone", drone_path %>
 					<%= link_to "Rilievi", survey_path %>
-					<%= link_to "Archeologia", archeologia_path %>
+					<%= link_to "Archeologia", archeologia_path,  style:"display: none;" %>
 					<%= link_to "Stampa 3D", print_path %>
 					<%= link_to "Portfolio", portfolio_path %>
 					<%= link_to "Contatti", contacts_path %>

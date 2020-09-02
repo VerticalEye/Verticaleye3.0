@@ -701,13 +701,6 @@ transform: translateY(25px);
 }
 
 
-#el-logo:hover .hover-img{
-  display: block;
-}
-
-#el-logo:hover #logo-animato{
-  display: none;
-}
 
 
 
@@ -1485,13 +1478,9 @@ footer{
 
 @keyframes ts-entry{
   0%{bottom: -100%;}
-  100%{bottom: -2%;}
+  100%{bottom: 0%;}
 }
 
-@keyframes fade-in{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
-}
 
 @keyframes opacità{
   0%{opacity: 1;}

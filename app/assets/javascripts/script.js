@@ -42,20 +42,17 @@ function check_if_in_view() {
       $element.removeClass('in-view');
     }
   });
-  var $gif = $('<img alt="logo_gif" title="logo_gif" id="prova">');
-  var $src = $('#gif').attr("src");
-  $gif.attr('src', $src);
+  var $gif = $('<img src="assets/bianco trasparente_noloop.gif" alt="logo_gif" title="logo_gif" id="prova">');
   if (($('#el-logo').hasClass('in-view')) && (!$('#el-logo').children('#prova').length)) {
     $('#el-logo').append($gif);
-
+  } else {
+    $('#el-logo').detach($gif);
   };
 
 
 }
 
-
 $("#defaultOpen").click();
-
 
 //Lightbox
 $("#lavori img").click(function(){
