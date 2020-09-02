@@ -274,11 +274,11 @@ p{
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 1s linear;
-  -moz-transform: translate3d(0px, 200px, 0px);
-  -webkit-transform: translate3d(0px, 200px, 0px);
-  -o-transform: translate(0px, 200px);
-  -ms-transform: translate(0px, 200px);
-  transform: translate3d(0px, 200px, 0px);
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50px, 0px);
 }
 
 .animation-element.fade-from-bottom.in-view {
@@ -296,11 +296,11 @@ p{
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 1s linear;
-  -moz-transform: translate3d(0px, -200px, 0px);
-  -webkit-transform: translate3d(0px, 200px, 0px);
-  -o-transform: translate(0px, -200px);
-  -ms-transform: translate(0px, -200px);
-  transform: translate3d(0px, -200px, 0px);
+  -moz-transform: translate3d(0px, -100px, 0px);
+  -webkit-transform: translate3d(0px, -100px, 0px);
+  -o-transform: translate(0px, -100px);
+  -ms-transform: translate(0px, -100px);
+  transform: translate3d(0px, -100px, 0px);
 }
 
 .animation-element.fade-from-top.in-view {
