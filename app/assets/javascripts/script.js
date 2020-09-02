@@ -1,4 +1,48 @@
-//animazioni onscroll
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = $(".tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = $(".tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+
+function openForm(){
+  document.getElementsByClassName("form")[0].style.display = "block";
+}
+
+function closeForm(){
+  document.getElementsByClassName("form")[0].style.display = "none";
+}
+
+
+
+
+  //animazioni onscroll
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 
@@ -21,6 +65,13 @@ function check_if_in_view() {
       $element.removeClass('in-view');
     }
   });
+  var $gif = $('<img alt="logo_gif" title="logo_gif" id="prova">');
+  var $src = $('#gif').attr("src");
+  $gif.attr('src', $src);
+  if (($('#el-logo').hasClass('in-view')) && (!$('#el-logo').children('#prova').length)) {
+    $('#el-logo').append($gif);
+
+  };
 }
 
 $window.on('scroll resize', check_if_in_view);
@@ -48,8 +99,8 @@ $("#lavori img").click(function(){
     $overlay.hide();
   });
 
+ 
 
-  var $gif = $('<img alt="logo_gif" title"logo gif">');
-  var $src = $('#gif').attr("src");
-  $gif.attr('src', $src);
-  $('#logo-hover .in-view').append($gif);
+
+  
+
