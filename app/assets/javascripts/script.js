@@ -1,19 +1,22 @@
+
+
+
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  $("#mySidenav").css('width', '50%');
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  $("#mySidenav").css('width', '0');
 }
 
 
 function openForm(){
-  document.getElementsByClassName("form")[0].style.display = "block";
+  $(".form").css('display', 'block');
 }
 
 function closeForm(){
-  document.getElementsByClassName("form")[0].style.display = "none";
+  $(".form").css('display', 'none');
 }
 
 
@@ -52,6 +55,11 @@ function check_if_in_view() {
 
 }
 
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+
+
 $("#defaultOpen").click();
 
 //Lightbox
@@ -76,8 +84,6 @@ $("#lavori img").click(function(){
     $overlay.hide();
   });
 
- $window.on('scroll resize', check_if_in_view);
-$window.trigger('scroll');
 
 
 // When the user scrolls the page, execute myFunction
