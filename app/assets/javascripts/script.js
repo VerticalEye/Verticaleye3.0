@@ -38,20 +38,18 @@ function check_if_in_view() {
     var element_bottom_position = (element_top_position + element_height);
 
     //check to see if this current container is within viewport
-    if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position)) {
+    if (element_top_position <= window_bottom_position) {
       $element.addClass('in-view');
     } else {
       $element.removeClass('in-view');
     }
   });
-  var $gif = $('<img src="assets/bianco trasparente_noloop.gif" alt="logo_gif" title="logo_gif" id="prova">');
+  var $gif = $('<img src="assets/biancovero trasparente_fermoepausa_loop.gif" alt="logo_gif" title="logo_gif" id="prova">');
   if (($('#el-logo').hasClass('in-view')) && (!$('#el-logo').children('#prova').length)) {
     $('#el-logo').append($gif);
   } else {
     $('#el-logo').detach($gif);
   };
-
 
 }
 
