@@ -910,6 +910,7 @@ transform: translateY(25px);
 .printer .card-border{
   background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
               fixed url('3dprint-min.jpg') no-repeat bottom / cover;
+  margin-bottom: 50px;
 }
 
 #vantaggi-stampa .material-icons{
