@@ -1,3 +1,4 @@
+$('#initial .logo').append($('<img src="assets/biancovero trasparente_fermoepausa_loop.webp" alt="logo_gif" title="logo_gif" id="prova">'));
 
 function openNav() {
   $("#mySidenav").css('width', '50%');
