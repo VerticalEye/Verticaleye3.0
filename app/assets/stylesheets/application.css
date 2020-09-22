@@ -137,7 +137,7 @@ main {
   min-height: calc(100vh - 60px - 211.72px);
   margin-top: 90px;
   background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
-              url(sfondo3.jpg) no-repeat top  / cover;
+              url(sfondo3.webp) no-repeat top  / cover;
  }
 
 
@@ -338,43 +338,43 @@ p{
 }
 
 .bg{
-  background: fixed url('bg-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg-min.webp') no-repeat bottom / cover;
 }
 
 .bg-1{
-  background: fixed url('bg1-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg1-min.webp') no-repeat bottom / cover;
 }
 
 .bg-2{
-  background: fixed url('bg2-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg2-min.webp') no-repeat bottom / cover;
 }
 
 .bg-3{
-  background: fixed url('bg3-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg3-min.webp') no-repeat bottom / cover;
 }
 
 .bg-4{
-  background: fixed url('bg4-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg4-min.webp') no-repeat bottom / cover;
 }
 
 .bg-5{
-  background: fixed url('bg5-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg5-min.webp') no-repeat bottom / cover;
 }
 
 .bg-6{
-  background: fixed url('bg6-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg6-min.webp') no-repeat bottom / cover;
 }
 
 .bg-7{
-  background: fixed url('bigliettini-min.jpg') no-repeat center / cover;
+  background: fixed url('bigliettini-min.webp') no-repeat center / cover;
 }
 
 .bg-8{
-  background: fixed url('bg8-min.jpg') no-repeat center / cover;
+  background: fixed url('bg8-min.webp') no-repeat center / cover;
 }
 
 .bg-9{
-  background: fixed url('bg9-min.jpg') no-repeat top / cover;
+  background: fixed url('bg9-min.webp') no-repeat top / cover;
 }
 
 .widescreen-post-hero{
@@ -506,7 +506,7 @@ p{
   position: fixed;
   height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
-              url(sfondo3.jpg) no-repeat top  / cover;
+              url(sfondo3.webp) no-repeat top  / cover;
   z-index: 100;
   top: 0;
   animation: fade-out 1.5s linear 1s normal 1,
@@ -658,17 +658,17 @@ transform: translateY(25px);
 }
 
 #hero-home{
-  background: fixed url('bg-min.jpg') no-repeat bottom / cover;
+  background: fixed url('bg-min.webp') no-repeat bottom / cover;
 }
 
 #value-proposition .rounded{
   background: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
-              fixed url('bg-min.jpg') no-repeat bottom / cover;
+              fixed url('bg-min.webp') no-repeat bottom / cover;
 }
 
 #brand-identity{
   background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .5), rgba(0, 0, 0, .9)), 
-              fixed url('bg3-min.jpg') no-repeat bottom / cover;
+              fixed url('bg3-min.webp') no-repeat bottom / cover;
   margin: 100px 0;
 }
 
@@ -701,12 +701,12 @@ transform: translateY(25px);
 /**** ABOUT ****/
 
 #hero-about{
-  background: fixed url('about-min.jpg') no-repeat center / cover;
+  background: fixed url('about-min.webp') no-repeat center / cover;
 }
 
 #mission .rounded{
   background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)),
-              fixed url('about-min.jpg') no-repeat bottom / cover;
+              fixed url('about-min.webp') no-repeat bottom / cover;
 
 }
 
@@ -725,7 +725,7 @@ transform: translateY(25px);
 
 #tools .container-md{
   background: linear-gradient( rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
-              fixed url('bg7-min.jpg') no-repeat bottom / cover;
+              fixed url('bg7-min.webp') no-repeat bottom / cover;
 }
 
 #fleet{
@@ -736,7 +736,7 @@ transform: translateY(25px);
 #fleet .container-md{
   padding: 25px 0;
   background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-              fixed url('fleet-min.jpg') no-repeat bottom / cover;
+              fixed url('fleet-min.webp') no-repeat bottom / cover;
 }
 
 #printer .container-md, #tools .container-md{
@@ -893,12 +893,12 @@ transform: translateY(25px);
 /**** STAMPA 3D ****/
 #print-intro{
   background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-              fixed url('bg8-min.jpg') no-repeat bottom / cover;
+              fixed url('bg8-min.webp') no-repeat bottom / cover;
 }
 
 .printer .card-border{
   background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-              fixed url('3dprint-min.jpg') no-repeat bottom / cover;
+              fixed url('3dprint-min.webp') no-repeat bottom / cover;
 }
 
 #printer{
@@ -1045,7 +1045,9 @@ transform: translateY(25px);
 }
 
 #overlay img{
+  width: auto;
   max-width: 60%;
+  max-height: calc((100vh - 90px) / 2);
   border-radius: 3px;
 }
 
@@ -1119,7 +1121,7 @@ footer a{
 
 footer{
   background: linear-gradient( rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
-              url(sfondo3.jpg) no-repeat top  / cover;
+              url(sfondo3.webp) no-repeat top  / cover;
   color: white;
 
 

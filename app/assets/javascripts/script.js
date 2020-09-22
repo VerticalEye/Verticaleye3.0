@@ -40,7 +40,7 @@ function check_if_in_view() {
       $element.removeClass('in-view');
     }
   });
-  var $gif = $('<img src="assets/biancovero trasparente_fermoepausa_loop.gif" alt="logo_gif" title="logo_gif" id="prova">');
+  var $gif = $('<img src="assets/biancovero trasparente_fermoepausa_loop.webp" alt="logo_gif" title="logo_gif" id="prova">');
   if (($('#el-logo').hasClass('in-view')) && (!$('#el-logo').children('#prova').length)) {
     $('#el-logo').append($gif);
   } else {
