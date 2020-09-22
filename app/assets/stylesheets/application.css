@@ -195,7 +195,7 @@ p{
   top: 0;
   left: 30%;
   border: medium solid white;
-  border-width: 225px 0 250px 100px;
+  border-width: 225px 0 225px 100px;
   border-color: transparent transparent transparent rgba(0, 0, 0, .9);
 }
 
@@ -850,6 +850,7 @@ transform: translateY(25px);
 }
 
 .sub-menu{
+  flex-wrap: nowrap;
   padding-top: 90px;
 }
 
@@ -865,12 +866,6 @@ transform: translateY(25px);
 .tabcontent video{
   width: 75%;
 }
-
-.services .row{
-  flex-wrap: nowrap;
-}
-
-
 
 .services h3{
   font-size: 2.5rem;
@@ -893,15 +888,11 @@ transform: translateY(25px);
   right: 0%;
   bottom: 0px;
   animation: ts-entry 1s linear 0s normal 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 /**** STAMPA 3D ****/
 #print-intro{
-  background: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
               fixed url('bg8-min.jpg') no-repeat bottom / cover;
 }
 
@@ -915,7 +906,7 @@ transform: translateY(25px);
 }
 
 #vantaggi-stampa .material-icons{
-  font-size: 4em;
+  font-size: 4rem;
   color: orange;
 }
 
@@ -1321,7 +1312,7 @@ footer{
   }
 
   #survey-img{
-    bottom: 0;
+    display: none;
   }
  
   .circle-btn{

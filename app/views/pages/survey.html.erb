@@ -3,7 +3,12 @@
 	<div class="hero-titlebox"></div>
 	<div class="title-container"><h1>RILIEVI</h1></div>
 	<div class="hero-img" id="survey-img">
-		<%= image_tag("ts.png", alt: "rilievo", title:"rilievi") %>
+		<picture>
+			<source media="(max-width:991px)" srcset="">
+			<source media="(max-width:767px)" srcset="">
+			<source media="(max-width:575px)" srcset="">
+			<%= image_tag("ts.png", alt: "rilievo", title:"rilievi") %>
+		</picture>
 	</div>
 </div>
 <section class="widescreen-post-hero container-fluid white-text">
@@ -20,7 +25,7 @@
 	</div>
 	<div id="topografico" class="tabcontent container-fluid justified">
 	  <div class="row justified ">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">Rilievo topografico</h2>
 	  			<p>Con il termine rilevamento topografico si intende la misura, sia planimetrica che altimetrica, dello spazio, ottenuta con strumentazione basata su tecnologie satellitari e/o elettro-ottiche. Grazie all'ausilio di strumenti ad alta precisione come stazioni totali e antenne GNSS, affiancate dalle più moderne tecnologie della fotogrammetria, siamo in grado di garantire elevata precisione e affidabilità in tutte le operazioni topografiche, offrendo soluzioni su misura per ogni situazione.<br>
@@ -38,13 +43,22 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element  fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element  fade-from-bottom">
 				<div>
-					<%= image_tag("ril1.png", alt: "rilievo stazione totale", title:"Rilievo a Stazione Totale", class:"images-md") %>
+					<picture>
+						<source media="(max-width:575px)" srcset="ril1-sm.png">
+						<source media="(max-width:400px)" srcset="ril1-xs.png">
+						<%= image_tag("ril1.png", alt: "rilievo stazione totale", title:"Rilievo a Stazione Totale", class:"images-md") %>
+					</picture>
 				</div>
 				<br>
 				<div>
-					<%= image_tag("ril2.png", alt: "CAD", title: "Elaborazione CAD del rilievo", class:"images-md") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="fotogram-md.png">
+						<source media="(max-width:575px)" srcset="fotogram-sm.png">
+						<source media="(max-width:400px)" srcset="fotogram-xs.png">
+						<%= image_tag("ril2.png", alt: "CAD", title: "Elaborazione CAD del rilievo", class:"images-md") %>
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -78,7 +92,7 @@
 
 	<div id="archeologico" class="tabcontent container-fluid justified">
 		<div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">rilievo archeologico</h2>
 		  		<p>L’attività dello scavo archeologico è per sua stessa natura un’azione distruttiva: questo rende evidente quanto importante sia documentare con la massima attenzione e precisione il manufatto rinvenuto sottoterra. Siccome il rilievo archeologico rappresenta il principale mezzo di documentazione di dettaglio dell'evidenza archeologica, è fondamentale che tale attività sia svolta con la massima professionalità e attenzione. <br>Offriamo a tutte le aziende e i privati che operano in cantiere o in zone vincolate un servizio di documentazione archeologica altamente professionale e di grande precisione. La nostra azienda si avvale di strumentazione all'avanguardia ed è in grado di fornire un prodotto completo e integrato valutando caso per caso le migliori soluzioni a disposizione. Il servizio si rivolge anche ai professionisti archeologi che volessero avvalersi delle nostre competenze e della nostra strumentazione per i propri lavori liberandosi dalla necessità di investire in prima persona.<br>A seconda delle esigenze sarà possibile avvalersi di un rilievo manuale in scala vettorializzato in CAD, dell'uso della stazione totale combinato con la geolocalizzazione satellitare, l'aggiunta di informazioni tridimensionali complete ottenute da laser scanner e ortofoto generate dall'uso di sistemi a pilotaggio remoto (droni).<br>Questo consente ai nostri clienti un grosso risparmio in termini di tempo e denaro, avvalendosi comunque di un servizio di grande qualità.</p>
@@ -95,13 +109,23 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element  fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element  fade-from-bottom">
 				<div>
-					<%= image_tag("archeo.png", alt: "rilievo archeologico", title:"Planimetria archeologica - da https://www.academia.edu/37509736/Medieval_coins_from_the_site_of_San_Vincenzo_on_the_island_of_Stromboli_Italy", class:"images-lg") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="fotogram-md.png">
+						<source media="(max-width:575px)" srcset="fotogram-sm.png">
+						<source media="(max-width:400px)" srcset="fotogram-xs.png">
+						<%= image_tag("archeo.png", alt: "rilievo archeologico", title:"Planimetria archeologica - da https://www.academia.edu/37509736/Medieval_coins_from_the_site_of_San_Vincenzo_on_the_island_of_Stromboli_Italy", class:"images-lg") %>
+					</picture>
 				</div>
 				<br>
 				<div>
-					<%= image_tag("gis.PNG", alt: "GIS_archeologia", title: "GIS di scavo archeologico", class:"images-lg") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="fotogram-md.png">
+						<source media="(max-width:575px)" srcset="fotogram-sm.png">
+						<source media="(max-width:400px)" srcset="fotogram-xs.png">
+						<%= image_tag("gis.PNG", alt: "GIS_archeologia", title: "GIS di scavo archeologico", class:"images-lg") %>
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -135,7 +159,7 @@
 
 	<div id="tred" class="tabcontent container-fluid justified">
 	  <div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">rilievo tridimensionale (3d)</h2>
 		  		<p>ILa metodologia più efficace al giorno d'oggi per la documentazione di un oggetto è il rilievo tridimensionale, poiché consente di ricreare un modello virtuale identico all’originale, metricamente corretto e fotorealistico. <br> Accanto a strumenti come i laser scanner, esistono oggi soluzioni software che permettono di ricostruire tridimensionalmente un oggetto o una scena utilizzando solamente immagini digitali o video, basandosi su algoritmi di ricostruzione Structure-from-Motion (SfM) e Multi-View Stereo (MVS). Il risultato è una riproduzione tridimensionale fedele e dettagliata dell’originale, navigabile in ogni sua parte.</p>
@@ -151,12 +175,22 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element  fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element  fade-from-bottom">
 				<div>
-					<%= image_tag("fornace.png", alt: "rilievo 3D fornace", title:"Rilievo 3D fornace romana", class:"images-md") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="fotogram-md.png">
+						<source media="(max-width:575px)" srcset="fotogram-sm.png">
+						<source media="(max-width:400px)" srcset="fotogram-xs.png">
+						<%= image_tag("fornace.png", alt: "rilievo 3D fornace", title:"Rilievo 3D fornace romana", class:"images-md") %>
+					</picture>
 				</div>
 				<div>
-					<%= image_tag("3dobject.JPG", alt: "Rilievo 3d oggetto ", title:"Rilievo 3D oggetto", class:"images-md") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="fotogram-md.png">
+						<source media="(max-width:575px)" srcset="fotogram-sm.png">
+						<source media="(max-width:400px)" srcset="fotogram-xs.png">
+						<%= image_tag("3dobject.JPG", alt: "Rilievo 3d oggetto ", title:"Rilievo 3D oggetto", class:"images-md") %>
+					</picture>
 				</div>
 			</div>
 		</div>

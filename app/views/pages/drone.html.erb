@@ -4,7 +4,13 @@
 	<div class="hero-titlebox"></div>
 	<div class="title-container"><h1>OPERAZIONI <br> CON DRONE</h1></div>
 	<div class="hero-img" id="drone-container">
-		<%= image_tag("drone2.png", alt: "drone", title: "dji s900") %>
+		<picture>
+			<source media="(max-width:991px)" srcset="drone2-lg.png">
+			<source media="(max-width:767px)" srcset="drone2-md.png">
+			<source media="(max-width:575px)" srcset="drone2-sm.png">
+			<source media="(max-width:400px)" srcset="drone2-xs.png">
+			<%= image_tag("drone2.png", alt: "drone", title: "dji s900") %>
+		</picture>
 	</div>
 </div>
 <section class="widescreen-post-hero container-fluid white-text">
@@ -24,7 +30,7 @@
 	</div>
 	<div id="Riprese-aeree" class="tabcontent container-fluid justified">
 	  <div class="row justified ">
-			<div class="col-sm-6 animation-element fade-from-left loop">
+			<div class="col-lg-6 animation-element fade-from-left loop">
 				<div>
 					<h2 class="up">Riprese aeree</h2>
 	  			<p>Le camere equipaggiate dai droni raggiungono altissime risoluzioni e pertanto si prestano essere messe a disposizione di spot e servizi pubblicitari e fotografici, supportando le riprese da terra con panoramiche aeree professionali di grande impatto emozionale, o fornendo suggestive fotografie aeree.</p>
@@ -38,7 +44,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element fade-from-bottom loop">
+			<div class="col-lg-6 center-text animation-element fade-from-bottom loop">
 				<br>
 				<br>
 				<%= video_tag("PianRanch.mp4", controls: true, title:"PianRanch") %>
@@ -74,7 +80,7 @@
 
 	<div id="Aerofotogrammetria" class="tabcontent container-fluid justified">
 		<div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">Aerofotogrammetria</h2>
 		  		<p>La fotogrammetria è una tecnica di rilievo che permette di acquisire dati metrici di un oggetto (forma e posizione) tramite l’acquisizione e l’analisi di una coppia di fotogrammi stereometrici. L’applicazione ai droni (aerofotogrammetria) opera attraverso la creazione d imodelli 3D per la creazione di modelli digitali del terreno e ortofoto, e la produzione di rilievi architettonici di infrastrutture ed edifici.<br>
@@ -95,13 +101,23 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element fade-from-bottom">
 				<div>
-					<%= image_tag("fotogram.png", alt: "aerofotogrammetria", title:"Fotogrammetria drone", class:"images-md") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="fotogram-md.png">
+						<source media="(max-width:575px)" srcset="fotogram-sm.png">
+						<source media="(max-width:400px)" srcset="fotogram-xs.png">
+						<%= image_tag("fotogram.png", alt: "aerofotogrammetria", title:"Fotogrammetria drone", class:"images-md") %>
+					</picture>
 				</div>
 				<br>
 				<div>
-					<%= image_tag("DEM.png", alt: "DEM", title: "Digital Elevation Model", class:"images-md") %>
+					<picture>						
+						<source media="(max-width:767px)" srcset="DEM-md.png">
+						<source media="(max-width:575px)" srcset="DEM-sm.png">
+						<source media="(max-width:400px)" srcset="DEM-xs.png">
+						<%= image_tag("DEM.png", alt: "DEM", title: "Digital Elevation Model", class:"images-md") %>
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -135,7 +151,7 @@
 
 	<div id="Ispezioni-aeree" class="tabcontent container-fluid justified">
 	  <div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">ispezioni aeree</h2>
 		  		<p>L'utilizzo di sistemi a pilotaggio remoto permette di poter ragiungere ed ispezionare dall'alto aree di grandi dimensioni e luoghi difficilmente raggiungibili come per esempio ripide scarpate, frane o zone alluvionate. Tutto ciò in piena sicurezza e a costi notevolmente più accessibili rispetto l'utilizzo di elicotteri o aerei.Le motivazioni possono variare dal semplice monitoraggio abientale allo studio di aree di calamità.
@@ -156,12 +172,21 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element fade-from-bottom">
 				<div>
-					<%= image_tag("isp.png", alt: "Ispezione Tetti", title:"Ispezioni tetti", class:"images-md") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="isp-md.png">
+						<source media="(max-width:575px)" srcset="isp-sm.png">
+						<source media="(max-width:400px)" srcset="isp-xs.png">
+						<%= image_tag("isp.png", alt: "Ispezione Tetti", title:"Ispezioni tetti", class:"images-md") %>
+					</picture>
 				</div>
 				<div>
-					<%= image_tag("isp2.png", alt: "Ispezione Cantieri", title:"Ispezioni cantieri", class:"images-md") %>
+					<picture>
+						<source media="(max-width:575px)" srcset="isp2-sm.png">
+						<source media="(max-width:400px)" srcset="isp2-xs.png">
+						<%= image_tag("isp2.png", alt: "Ispezione Cantieri", title:"Ispezioni cantieri", class:"images-md") %>
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -198,7 +223,7 @@
 
 	<div id="termografia" class="tabcontent container-fluid justified">
 	 <div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">ispezioni termografiche</h2>
 		  		<p>Qualunque oggetto abbia una temperatura assoluta superiore allo zero assoluto (-273,14°C) è individuabile tramite un’indagine termografica che ne rileva le radiazioni termiche (infrarossi) emesse sotto forma di onde elettromagnetiche. La camera termica converte il calore percepito in impulso elettrico e a sua volta in termogramma.	
@@ -218,9 +243,14 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element fade-from-bottom">
 				<div>
-					<%= image_tag("termo.png", alt: "termografia", title:"Ispezione termografica pannelli fotovoltaici", class:"images-lg") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="termo-md.png">
+						<source media="(max-width:575px)" srcset="termo-sm.png">
+						<source media="(max-width:400px)" srcset="termo-xs.png">
+						<%= image_tag("termo.png", alt: "termografia", title:"Ispezione termografica pannelli fotovoltaici", class:"images-lg") %>
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -255,7 +285,7 @@
 
 	<div id="Agricoltura" class="tabcontent container-fluid justified">
 	  <div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">agricoltura di precisione</h2>
 		  		<p>Il termine Agricoltura di Precisione indica un insieme di concetti di gestione agronomica basato sull’osservazione e la risposta alle variazioni che esistono all’interno di aree coltivate (es. suolo, umidità, sostanza organica, ecc.) e le azioni mirate all'ottimizzazione della gestione delle stesse.
@@ -271,9 +301,14 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element fade-from-bottom">
 				<div>
-					<%= image_tag("agri.png", alt: "Agricoltura 2.0", title:"Rilievo Multispettrale", class:"images-lg") %>
+					<picture>
+						<source media="(max-width:767px)" srcset="agri-md.png">
+						<source media="(max-width:575px)" srcset="agri-sm.png">
+						<source media="(max-width:400px)" srcset="agri-xs.png">
+						<%= image_tag("agri.png", alt: "Agricoltura 2.0", title:"Rilievo Multispettrale", class:"images-lg") %>
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -307,7 +342,7 @@
 
 	<div id="Allevamento" class="tabcontent container-fluid justified">
 	  <div class="row justified">
-			<div class="col-sm-6 animation-element fade-from-left">
+			<div class="col-lg-6 animation-element fade-from-left">
 				<div>
 					<h2 class="up">allevamento di precisione</h2>
 		  		<p>Con il termine Allevamento di Precisione si intende un insieme di concetti di gestione zootecnica basato sull'osservazione e la risposta alle variazioni che insistono sull'animale. Tramite l'utilizzo di un SAPR si fa uso di tecniche termografiche per l'individuazione (anche in pascoli estesi) di capi affetti da stati patologici o di stress</p>
@@ -321,9 +356,13 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 center-text animation-element fade-from-bottom">
+			<div class="col-lg-6 center-text animation-element fade-from-bottom">
 				<div>
-					<%= image_tag("allevamento.png", alt: "Allevamento di precisione", title:"Allevamento di precisione", class:"images-lg") %>
+					<picture>
+						<source media="(max-width:575px)" srcset="allevamento-sm.png">
+						<source media="(max-width:400px)" srcset="allevamento-xs.png">
+						<%= image_tag("allevamento.png", alt: "Allevamento di precisione", title:"Allevamento di precisione", class:"images-lg") %>
+					</picture>
 				</div>
 			</div>
 		</div>

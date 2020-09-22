@@ -1,6 +1,4 @@
 
-
-
 function openNav() {
   $("#mySidenav").css('width', '50%');
 }

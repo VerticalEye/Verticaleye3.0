@@ -23,7 +23,11 @@
 			Pertanto offriamo un gamma di servizi (con Drone e non solo), che permettono di osservare, registrare e misurare la realtà da un nuovo punto di vista, raggiungendo spazi inediti e aree altrimenti inaccessibili, in tempi contenuti, fornendo servizi preziosi nei campi di:</p>
 		</div>
 		<div class=" animation-element  fade-in">
-			<%= image_tag("Icone.png", alt:"campi d'applicazione", title:"Campi d'applicazione")%>
+			<picture>
+				<source media="(max-width:575px)" srcset="Icone-xs.PNG">
+				<%= image_tag("Icone.png", alt:"campi d'applicazione", title:"Campi d'applicazione")%>
+			</picture>
+			
 		</div>
 	</div>
 </section>
@@ -106,12 +110,16 @@
 		<div class="row">
 			<div class="col-md-6 center-text">
 				<div class="logo-coll">
-					<a href="https://www.binarioprint.it" target="_blank"><%= image_tag("binarioprint.PNG", alt:"binarioprint stampa 3D", title:"Binarioprint", class:"images-xs") %></a> 
+					<a href="https://www.binarioprint.it" target="_blank">
+						<%= image_tag("binarioprint.PNG", alt:"binarioprint stampa 3D", title:"Binarioprint", class:"images-xs") %>
+					</a> 
 				</div>
 			</div>
 			<div class="col-md-6 center-text">
 				<div class="logo-coll">
-					<a href="https://www.godian.it" target="_blank"><%= image_tag("Godian.JPG", alt:"godian videomaker", title:"Godian", class:"images-xs") %></a> 
+					<a href="https://www.godian.it" target="_blank">
+						<%= image_tag("Godian.jpg", alt:"godian videomaker", title:"Godian", class:"images-xs") %>
+					</a> 
 				</div>
 
 			</div>
