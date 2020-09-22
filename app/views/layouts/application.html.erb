@@ -18,7 +18,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'grid-sistem', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', :defer => "defer" %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;700&display=swap" rel="stylesheet">
@@ -44,5 +44,5 @@
     </main>
     <%= render "layouts/footer" %>
   </body>
-  <%= javascript_include_tag 'script' %>
+  <%= javascript_include_tag 'script', :defer => "defer" %>
 </html>

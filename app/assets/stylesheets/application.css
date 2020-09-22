@@ -821,6 +821,12 @@ transform: translateY(25px);
   overflow: hidden;
 }
 
+.flip-card li{
+  padding: 0 5px;
+  list-style-type: none;
+  text-align: justify;
+}
+
 /**** SERVIZI ****/
 
 .tablink {
