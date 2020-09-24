@@ -1,11 +1,12 @@
+
 $('.dropbtn').on('click', function openDropdwn(){
     $('.dropdown-content').addClass('show');
     $('.dropbtn span').css('transform', 'rotateX(180deg)');
 })
 
 $('main').on('click', function closeDropdwn(){
-  var myDropdown = $('#myDropdown').css('display');
-    if (myDropdown = 'block') {
+  var myDropdown = $('#myDropdown');
+    if (myDropdown.hasClass('show')) {
       myDropdown.removeClass('show').addClass('hid');
       $('.dropbtn span').css('transform', 'rotateX(0deg)');
     }

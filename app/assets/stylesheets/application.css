@@ -618,6 +618,12 @@ nav{
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: 10s;
+}
+
+.dropdown:hover #dropIcon{
+  transform: rotateX(180deg);
+  transition: .5s;
 }
 
 .dropdown-content.show{
