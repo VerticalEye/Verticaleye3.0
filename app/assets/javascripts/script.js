@@ -7,7 +7,7 @@ $('.dropbtn').click($('.dropdown-content').toggle(
     $('.dropdown-content').css('display', 'none');
     $('.dropbtn span').css('transform', 'rotateX(0deg)');
   }
-);
+))
 
 
 
