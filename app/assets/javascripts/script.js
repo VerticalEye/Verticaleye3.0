@@ -1,5 +1,28 @@
 
+$('.dropbtn').click($('.dropdown-content').toggle(
+  function (){
+    $('.dropdown-content').css('display', 'block');
+    $('.dropbtn span').css('transform', 'rotateX(180deg)');
+  }, function (){
+    $('.dropdown-content').css('display', 'none');
+    $('.dropbtn span').css('transform', 'rotateX(0deg)');
+  }
+);
 
+
+
+/*$('.dropbtn').on('click', function openDropdwn(){
+    $('.dropdown-content').addClass('show');
+    $('.dropbtn span').css('transform', 'rotateX(180deg)');
+})*/
+
+/*$('main').on('click', function closeDropdwn(){
+  var myDropdown = $('#myDropdown').css('display');
+    if (myDropdown = 'block') {
+      myDropdown.removeClass('show').addClass('hid');
+      $('.dropbtn span').css('transform', 'rotateX(0deg)');
+    }
+})*/
 
 function openNav() {
   $("#mySidenav").css('width', '50%');
@@ -58,15 +81,7 @@ $window.trigger('scroll');
 
 $("#defaultOpen").click();
 
-//Lightbox
-$("#lavori img").click(function(){
-    var href = $(this).attr("src"); 
-    $overlay.show();
-    $immagine.attr("src", href);
-    $immagine.show();
-    var titleDesc = $(this).attr("title");
-    $desc.text(titleDesc);
-  });
+
 
   var $overlay = $('<div id="overlay"></div>');
   var $immagine = $('<img>');
@@ -80,7 +95,15 @@ $("#lavori img").click(function(){
     $overlay.hide();
   });
 
-
+//Lightbox
+$("#lavori img").click(function(){
+    var href = $(this).attr("src"); 
+    $overlay.show();
+    $immagine.attr("src", href);
+    $immagine.show();
+    var titleDesc = $(this).attr("title");
+    $desc.text(titleDesc);
+  });
 
 // When the user scrolls the page, execute myFunction
 $window.on('scroll', stickyFunction);

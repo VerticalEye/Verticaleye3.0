@@ -6,13 +6,18 @@
 		</div>
 		<div class="col" id="navbar">
 			<nav id="pc-nav">
-				<ul class="nav-list">
+				<ul class="nav-list ul-lefted">
 					<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
 					<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
-					<li class="<%= 'active' if current_page?(drone_path) %>"><%= link_to "Drone", drone_path %></li>
-					<li class="<%= 'active' if current_page?(survey_path) %>"><%= link_to "Rilievi", survey_path %></li>
-					<li class="<%= 'active' if current_page?(archeologia_path) %> invisible"><%= link_to "Archeologia", archeologia_path %></li>
-					<li class="<%= 'active' if current_page?(print_path) %>"><%= link_to "Stampa 3D", print_path %></li>
+					<li class="dropdown">
+						<div class="dropbtn row">Servizi <span class="material-icons">arrow_drop_down</span></i></div>
+						<ul class="dropdown-content ul-lefted invisible" id="myDropdown">
+							<li class="<%= 'active' if current_page?(drone_path) %>"><%= link_to "Drone", drone_path %></li>
+							<li class="<%= 'active' if current_page?(survey_path) %>"><%= link_to "Rilievi", survey_path %></li>
+							<!--<li class="<%= 'active' if current_page?(archeologia_path) %> invisible"><%= link_to "Archeologia", archeologia_path %></li>-->
+							<li class="<%= 'active' if current_page?(print_path) %>"><%= link_to "Stampa 3D", print_path %></li>
+						</ul>
+					</li>			
 					<li class="<%= 'active' if current_page?(portfolio_path) %>"><%= link_to "Portfolio", portfolio_path %></li>
 					<li class="<%= 'active' if current_page?(contacts_path) %>"><%= link_to "Contatti", contacts_path %></li>
 				</ul>	
