@@ -16,7 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
-/* Set the width of the side navigation to 250px */
+
 
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
