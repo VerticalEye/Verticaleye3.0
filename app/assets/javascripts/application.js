@@ -38,12 +38,3 @@ function openPage(pageName, elmnt, color) {
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
 }
-
-if ($.browser.safari == true) {
-  var $image = $('img');
-  $.each($image, function(){
-    var $vecchio = $(this).attr('src');
-    var $nuovo = $vecchio - '.webp' + '.png';
-    $(this).attr('src', $nuovo);
-  })
-}
